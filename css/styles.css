@@ -1,0 +1,131 @@
+/*
+ * Start Bootstrap - Business Frontpage (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+/*font-family: 'Source Sans Pro', sans-serif;*/
+/* Import Font CSS */
+@font-face {
+  font-family: 'Frutiger-Light';
+  src:  url('../fonts/font/frutiger-ce-45-light.ttf')  format('truetype');
+}
+body {
+    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/*  Default resets*/
+a:hover{text-decoration:none;}
+/* Main top Navigation ========================*/
+.nav-top-menu {background-color:#231916;}
+.main-logo{padding:20px;}
+.main-logo .search-input .form-control{
+    border-bottom:1px solid #929292;
+    border-radius:0px;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    box-shadow:none;
+    height:24px;
+    padding:0px 0px;
+    font-size:16px;
+}
+.main-logo .search-input{
+        padding: 40px 0px 0px 0px;
+}
+.search-input{}
+.search-input .fa-search{
+    position: absolute;
+    top: 45px;
+    font-size: 14px;
+    right: 2px;
+    font-weight:normal;
+}
+.login-insert{
+      padding: 30px 0px 0px 10px;
+}
+.login-insert{
+   margin: 15px 5px;
+}
+.login-insert a{
+    border-left:1px solid #5e5d5d;
+    color:#5e5d5d;
+    text-transform:uppercase;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    padding:0 10px;
+}
+.nav-main-bar{
+    margin-bottom:0px;
+    background-color:#e16281;
+    border:0;
+}
+.nav-main-bar .nav-man-bar li a{color:#fff;}
+.nav-main-bar .nav-man-bar li:hover{background-color:#2f2725;}
+
+/* end Main top Navigation ========================*/
+
+/* Header Image Background - ) */
+.business-header {
+    height: 450px;
+    background: url('../images/girl-background-main.jpg') center center no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+/* Main Content =============== */
+.border-text {
+border:2px solid #231916;
+padding:20px 0px;
+min-height: 290px;
+margin-top:18px;
+}
+.border-text h4{
+    width:116px;
+    margin-top:-30px;
+    margin-left:5px;
+    background:white;
+    margin-bottom: 14px;
+    font-size: 24px;
+    padding-left: 12px;
+}
+.potion-text span{
+    font-size:12px;
+    color:#5e5d5d;
+}
+.potion-text p{
+    line-height:25.89px;
+    color:#403d3d;
+    font-size:14px;
+    font-weight:600;
+}
+.after-before-image img{
+    margin:auto;
+}
+.groups-items{
+    background-color: #f5f5f5;
+    display: block;
+    overflow: hidden;
+    margin: 5px;
+    padding: 5px 0px;
+}
+/* == Line horisontal ==*/
+.hr-line{    
+    height: 2px;
+    background: #231916;
+     margin-top:15px;
+}
+.space{border:0;margin-bottom:20px;}
+.content-in h2{
+    margin: 0px auto;
+    font-size: 34px;
+    letter-spacing: 2px;
+}
+/* end Main Content ============= */
+.img-center {
+    margin: 0 auto;
+}
+
+footer {
+    margin: 50px 0;
+}
