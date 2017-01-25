@@ -135,6 +135,9 @@ margin-top:18px;
     border-radius:0;
     min-height:420px;
 }
+.content-docs .size-images img{
+    width:294px;
+}
 .content-docs .caption p{
     font-size:14px;
     color:#231916;
@@ -144,6 +147,76 @@ margin-top:18px;
     margin-bottom:20px;
     color:#231916;
 }
+/* Content with carousel 1*/
+.board-carousel{
+    margin-top:35px;
+}
+.board-carousel .border-medias{
+    padding:10px;
+    border:1px solid black;
+    margin:0px 15px 18px 15px;
+}
+.border-medias h4.media-heading{
+    margin-bottom:12px;
+}
+.border-medias .media-body p{
+    font-size:15px;
+    line-height:1.2em;
+}
+.border-medias .media-body{
+    padding-left:10px;
+}
+/* end borders*/
+/* Carousel Small*/
+.carousel-small h5{font-size:12px;}
+.carousel-small .carousel-inner .item img{
+    margin:auto;
+}
+.carousel-small .carousel-inner .carousel-caption{
+    left: 15%;
+    right: 15%;
+    padding: 15px 0px;
+    bottom: 20px;
+    background-color:rgba(114, 110, 107, 0.61);
+}
+.carousel-small .carousel-indicators{
+    bottom:0px;
+     background-color:rgba(114, 110, 107, 0.61);
+     left:45%;
+     width:70%;
+     padding:2px 0px;
+}
+.carousel-small .carousel-indicators li{
+    background-color:#2bac98;
+    border:0;
+}
+.carousel-small .carousel-indicators .active{
+    background-color:#fff;
+    border:0;
+}
+/* Carousel small end */
+/* Big Carousel*/
+.big-slide{margin:20px auto;}
+.big-slide .carousel-indicators li{
+    background-color:#2bac98;
+    border:0;
+}
+.big-slide .carousel-indicators .active{
+    background-color:#fff;
+    border:0;
+}
+/* Image Tumbnails*/
+.thumnbail-sections{margin:35px auto;}
+.thumnbail-sections .thumbnail-image h4{padding:12px 0px;font-style:italic;}
+.thumnbail-sections .thumbnail-image{margin-bottom:12px;}
+.read-more a{color:#000;font-size:16px;
+    text-transform:uppercase;
+}
+.read-btn{text-align:center;margin:25px auto;}
+.read-more{border:1px solid #000;border-radius:0px;margin:auto;}
+.read-more:hover{border-radius:0;border:1px solid #000;}
+
+/* end Image Tumnails*/
 /* Two Lines*/
 #two-lines h2{}
 /* end Main Content ============= */
