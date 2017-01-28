@@ -10,7 +10,7 @@
   src:  url('../fonts/font/frutiger-ce-45-light.ttf')  format('truetype');
 }
 body {
-    padding-top: 50px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    padding-top: 0px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: 'Source Sans Pro', sans-serif;
 }
 /*  Default resets*/
@@ -62,7 +62,13 @@ a:hover{text-decoration:none;}
 .nav-main-bar .nav-man-bar li a{color:#fff;padding: 15px 36px;font-size:20px;}
 .nav-main-bar .nav-man-bar li:hover{background-color:#2f2725;}
 
-.slow{min-height: 35px;top:7%;}
+.slow{min-height: 35px;top:10%;}
+.main-logo-fix{    position: fixed;
+    width: 100%;
+    left: 0;
+    background-color: white;
+    z-index: 16;
+    top: 0;padding:0;}
 /* Mega Menu*/
 .nav-man-bar .dropdown-large {
   position: static !important;
