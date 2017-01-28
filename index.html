@@ -101,28 +101,94 @@
                 </button>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
+            <div class="collapse navbar-collapse js-navbar-collapse" id="bs-example-navbar-collapse-2">
                 <ul class="nav navbar-nav nav-man-bar">
                     <li>
-                        <a href="#">諮詢專線  ( 07 ) 334-4593</a>
+                        <a href="#">最新消息</a>
                     </li>
                     <li>
-                        <a href="#">聯絡我們</a>
+                        <a href="#">師資介紹</a>
+                    </li>
+                    <li class="dropdown dropdown-large">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">課程介紹 <b class="caret"></b></a>
+                        <ul class="dropdown-menu dropdown-menu-large row">
+                        <div class="container">
+                          <div class="drop-mega-back">
+                          <li class="col-sm-3 padd">
+                            <ul class="left-mega">
+                              <li><a href="#">業人才投資計畫 </a></li>
+                              <li><a href="#">立體美睫創業班 </a></li>
+                              <li><a href="#">青年就業讚專區 </a></li>
+                              <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">國家美容丙級／乙級證照班</a></li>
+                               <li><a href="#">醫學美容就業班</a></li>
+                               <li><a href="#">專業沙龍美容班</a></li>
+                               <li><a href="#">時尚藝術美甲班</a></li>
+                               <li><a href="#">新娘秘書培訓班</a></li>
+                               <li><a href="#">時尚立體紋繡班</a></li>
+                            </ul>
+                          </li>
+                          <!--  IImages LI-->
+                          <div class="tab-content">
+                          <div role="tabpanel" class="tab-pane active mega-pane" id="home">
+                            <li class="col-md-3">
+                                <ul>
+                                  <li><img class="img-responsive" src="images/content-images/fashion-boys.png"/>
+                                    <div class="caption">
+                                      <h4>投資計畫</h4>
+                                        <p>2017S/S PR01.TRADE SHOW TOKYO PR01.TRADE SHOW TOKYO Ebisu會場品牌精選整理</p>
+                                    </div>
+                                  </li>
+                                </ul>
+                            </li>
+                            <li class="col-md-3">
+                                <ul>
+                                  <li><img class="img-responsive" src="images/content-images/fashion-boys.png"/>
+                                    <div class="caption">
+                                      <h4>投資計畫</h4>
+                                        <p>2017S/S PR01.TRADE SHOW TOKYO PR01.TRADE SHOW TOKYO Ebisu會場品牌精選整理</p>
+                                    </div>
+                                  </li>
+                                </ul>
+                            </li>
+                            <li class="col-md-3">
+                               <ul>
+                                  <li><img class="img-responsive" src="images/content-images/fashion-boys.png"/>
+                                  <div class="caption">
+                                      <h4>投資計畫</h4>
+                                        <p>2017S/S PR01.TRADE SHOW TOKYO PR01.TRADE SHOW TOKYO Ebisu會場品牌精選整理</p>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="col-md-3">
+                               <ul>
+                                  
+                                  <li><img class="img-responsive" src="images/content-images/fashion-boys.png"/>
+                                  <div class="caption">
+                                      <h4>投資計畫</h4>
+                                        <p>2017S/S PR01.TRADE SHOW TOKYO PR01.TRADE SHOW TOKYO Ebisu會場品牌精選整理</p>
+                                    </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            </div><!--  Content-->
+                            </div>
+                          <!--  /. Images LI-->
+                          </div>
+                        </div>
+                      </ul>
                     </li>
                     <li>
-                        <a href="#">聯絡我們</a>
+                        <a href="#">媒體報導</a>
                     </li>
                     <li>
-                        <a href="#">聯絡我們</a>
+                        <a href="#">學員專區</a>
                     </li>
                     <li>
-                        <a href="#">聯絡我們</a>
+                        <a href="#">課程花絮</a>
                     </li>
                     <li>
-                        <a href="#">聯絡我們</a>
-                    </li>
-                    <li>
-                        <a href="#">聯絡我們</a>
+                        <a href="#">數位學院</a>
                     </li>
                 </ul>
             </div>
@@ -559,7 +625,18 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".nav-man-bar li a").on("click", function(e){
+    e.preventDefault();
+    //$(".dropdown-menu-large").toggle();
+  });
 
+});
+$(document).on('click', '.nav-man-bar .dropdown-menu', function (e) {
+  e.stopPropagation();
+});
+</script>
 </body>
 
 </html>
