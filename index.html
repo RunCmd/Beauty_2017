@@ -633,6 +633,14 @@ $(document).ready(function(){
   });
 
 });
+  $(window).scroll(function(event) {
+    if($(window).scrollTop() > 250){
+      $(".nav-main-bar").addClass("navbar-fixed-top slow");
+    }else {
+      $(".nav-main-bar").removeClass("navbar-fixed-top");
+
+    }
+  });
 $(document).on('click', '.nav-man-bar .dropdown-menu', function (e) {
   e.stopPropagation();
 });

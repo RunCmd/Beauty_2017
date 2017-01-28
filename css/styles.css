@@ -62,6 +62,7 @@ a:hover{text-decoration:none;}
 .nav-main-bar .nav-man-bar li a{color:#fff;padding: 15px 36px;font-size:20px;}
 .nav-main-bar .nav-man-bar li:hover{background-color:#2f2725;}
 
+.slow{min-height: 35px;top:7%;}
 /* Mega Menu*/
 .nav-man-bar .dropdown-large {
   position: static !important;
