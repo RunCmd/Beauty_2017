@@ -28,7 +28,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" rel="stylesheet">
 </head>
 
-<body>
+<body id="top-page" data-spy="scroll" data-offset="60">
     <!-- Navigation -->
     <nav class="navbar nav-top-menu navbar-inverse" id="nav-top-menu" role="navigation">
         <div class="container">
@@ -94,7 +94,7 @@
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
+                <button type="button" class="navbar-toggle slide-anime" data-toggle="collapse" data-target="#bs-example-navbar-collapse-2">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -630,6 +630,7 @@
               <h4 class="media-heading"><a href="#">美容教主祕密花園 粉IG</a></h4>
             </div>
             <div class="media-right media-middle">
+            <p class="pull-right back-top"><a href="#top-page"><i class="fa fa-arrow-circle-up fa-lg" aria-hidden="true"></i></a></p>
               <a href="#">
                 <img class="media-object" src="images/qrcode.png" alt="qr code" width="120px">
               </a>
@@ -648,6 +649,28 @@
     <script src="js/swipe.js"></script>
 <script>
 $(document).ready(function(){
+  $("footer a[href^='#top-page'], a[href^='#down']").on("click", function(event){
+    event.preventDefault();
+  //Store Hash (?)
+   var href = $(this).attr('href');
+          href = '#' + href.split('#').pop();
+           var $target = $(href).offset().top;
+    $("html, body").stop().animate({
+    scrollTop:$target -140
+    },
+      900, function(){
+      });
+    });
+//Slide animation mobile menu
+  $(".slide-anime").on("click", function(){
+    $(".navbar-collapse").toggleClass("animate");
+  });
+  $(".carousel-small .carousel-inner .item").hover(function() {
+    $(".carousel-small .carousel-small .carousel-inner .carousel-caption").fadeIn();
+  }, function() {
+    /* Stuff to do when the mouse leaves the element */
+    $(".carousel-small .carousel-inner .carousel-caption").fadeOut("fast");
+  });
 
   $(".nav-man-bar li a").on("click", function(e){
     e.preventDefault();
